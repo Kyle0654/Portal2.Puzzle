@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED228463-1F84-4DBE-AC51-1F544096ED55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Portal2</RootNamespace>
+    <AssemblyName>Portal2.Puzzle</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>162</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataTypes\FPoint3.cs" />
+    <Compile Include="DataTypes\IP2CNode.cs" />
+    <Compile Include="DataTypes\Matrix.cs" />
+    <Compile Include="DataTypes\P2CFile.cs" />
+    <Compile Include="DataTypes\P2CNode.cs" />
+    <Compile Include="DataTypes\P2CProperty.cs" />
+    <Compile Include="DataTypes\Point3.cs" />
+    <Compile Include="Portal2.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Connections\ConnectionLogicReceiver.cs" />
+    <Compile Include="Connections\ConnectionLogicSender.cs" />
+    <Compile Include="Connections\ConnectionPointReceiver.cs" />
+    <Compile Include="Connections\ConnectionPointSender.cs" />
+    <Compile Include="Connections\MultiConnectionPointReceiver.cs" />
+    <Compile Include="Connections\MultiConnectionPointSender.cs" />
+    <Compile Include="Connections\SingleConnectionPointReceiver.cs" />
+    <Compile Include="Connections\SingleConnectionPointSender.cs" />
+    <Compile Include="Connections\Connection.cs" />
+    <Compile Include="Items\Button.cs" />
+    <Compile Include="Connections\ConnectionPoint.cs" />
+    <Compile Include="Items\AngledPanel.cs" />
+    <Compile Include="Items\BarrierHazard.cs" />
+    <Compile Include="Items\ButtonPedestal.cs" />
+    <Compile Include="Items\Barrier.cs" />
+    <Compile Include="Items\FaithPlate.cs" />
+    <Compile Include="Items\FaithPlateTarget.cs" />
+    <Compile Include="Items\PistomPlatformExtent.cs" />
+    <Compile Include="Items\TrackPlatform.cs" />
+    <Compile Include="Items\PistonPlatform.cs" />
+    <Compile Include="Items\Extent.cs" />
+    <Compile Include="Items\PaintDropper.cs" />
+    <Compile Include="Items\Paint.cs" />
+    <Compile Include="Items\LaserRelay.cs" />
+    <Compile Include="Items\LaserCatcher.cs" />
+    <Compile Include="Items\LaserEmitter.cs" />
+    <Compile Include="Items\Goo.cs" />
+    <Compile Include="Items\SecondaryObservationRoom.cs" />
+    <Compile Include="Items\FlipPanel.cs" />
+    <Compile Include="Items\Stairs.cs" />
+    <Compile Include="Items\LightBridge.cs" />
+    <Compile Include="Items\Cube.cs" />
+    <Compile Include="Items\CubeDropper.cs" />
+    <Compile Include="Items\EntryDoor.cs" />
+    <Compile Include="Items\ExitDoor.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\ItemFacing.cs" />
+    <Compile Include="Items\LightPanel.cs" />
+    <Compile Include="Items\ObservationRoom.cs" />
+    <Compile Include="Items\TractorBeam.cs" />
+    <Compile Include="Items\Turret.cs" />
+    <Compile Include="Puzzle.cs" />
+    <Compile Include="Voxel.cs" />
+    <Compile Include="VoxelField.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
